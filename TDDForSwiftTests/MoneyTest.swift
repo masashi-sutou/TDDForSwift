@@ -25,7 +25,7 @@ class MoneyTest: XCTestCase {
         XCTAssertEqual(Dollar(10), product)
         
         product = five.times(3)
-        XCTAssertEqual(15, product.amount)
+        XCTAssertEqual(Dollar(15), product)
     }
     
     func testEquality() {
