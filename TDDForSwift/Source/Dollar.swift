@@ -17,6 +17,6 @@ class Dollar {
     }
     
     func times(_ multiplier: Int) {
-        amount = 5 * 2
+        amount = amount * 2
     }
 }
