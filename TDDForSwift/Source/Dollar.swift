@@ -8,8 +8,8 @@
 
 import Foundation
 
-class Dollar: Equatable {
-
+class Dollar: Money, Equatable {
+    
     private var amount: Int
     
     init(_ amount: Int) {
