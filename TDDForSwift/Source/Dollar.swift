@@ -9,8 +9,8 @@
 import Foundation
 
 class Dollar {
-    
-    var amount: Int
+
+    private var amount: Int
     
     init(_ amount: Int) {
         self.amount = amount
