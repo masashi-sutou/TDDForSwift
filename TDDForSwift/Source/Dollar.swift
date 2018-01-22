@@ -10,13 +10,13 @@ import Foundation
 
 class Dollar {
     
-    var amount: Int = 5 * 2
+    var amount: Int
     
     init(_ amount: Int) {
-        
+        self.amount = amount
     }
     
     func times(_ multiplier: Int) {
-        
+        amount = 5 * 2
     }
 }
