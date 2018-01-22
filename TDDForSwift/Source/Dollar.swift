@@ -16,7 +16,8 @@ class Dollar {
         self.amount = amount
     }
     
-    func times(_ multiplier: Int) {
+    func times(_ multiplier: Int) -> Dollar? {
         amount *= multiplier
+        return nil
     }
 }
