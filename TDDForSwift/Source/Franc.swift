@@ -20,11 +20,11 @@ class Franc: Money, Equatable {
     }
     
     func equals<T: Equatable>(_ object: T) -> Bool {
-        let franc: Franc = object as! Franc
-        return amount == franc.amount
+        let money: Money = object as! Money
+        return amount == money.amount
     }
     
-    static func ==(lhs: Franc, rhs: Franc) -> Bool {
+    static func ==(lhs: Money, rhs: Money) -> Bool {
         return lhs.amount == rhs.amount
     }
 }
