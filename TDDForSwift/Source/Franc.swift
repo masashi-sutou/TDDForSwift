@@ -10,10 +10,9 @@ import Foundation
 
 class Franc: Money, Equatable {
     
-    private var amount: Int
-    
     init(_ amount: Int) {
-        self.amount = amount
+        super.init()
+        super.amount = amount
     }
     
     func times(_ multiplier: Int) -> Franc {
