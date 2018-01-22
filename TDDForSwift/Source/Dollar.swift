@@ -9,6 +9,9 @@
 import Foundation
 
 class Dollar {
+    
+    var amount: Int
+    
     init(_ amount: Int) {
         
     }
