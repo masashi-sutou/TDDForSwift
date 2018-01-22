@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Franc: Equatable {
+class Franc: Money, Equatable {
     
     private var amount: Int
     
