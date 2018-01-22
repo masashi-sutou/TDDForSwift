@@ -21,6 +21,7 @@ class Dollar {
     }
     
     func equals(_ object: AnyObject) -> Bool {
-        return true
+        let dollar: Dollar = object as! Dollar
+        return amount == dollar.amount
     }
 }
