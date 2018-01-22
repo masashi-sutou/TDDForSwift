@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Franc: Money, Equatable {
+class Franc: Money {
     
     init(_ amount: Int) {
         super.init()
@@ -17,14 +17,5 @@ class Franc: Money, Equatable {
     
     func times(_ multiplier: Int) -> Franc {
         return Franc(amount * multiplier)
-    }
-    
-    func equals<T: Equatable>(_ object: T) -> Bool {
-        let money: Money = object as! Money
-        return amount == money.amount
-    }
-    
-    static func ==(lhs: Money, rhs: Money) -> Bool {
-        return lhs.amount == rhs.amount
     }
 }
