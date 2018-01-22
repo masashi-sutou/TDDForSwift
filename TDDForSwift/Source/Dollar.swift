@@ -10,7 +10,7 @@ import Foundation
 
 class Dollar {
     
-    var amount: Int = 10
+    var amount: Int = 5 * 2
     
     init(_ amount: Int) {
         
