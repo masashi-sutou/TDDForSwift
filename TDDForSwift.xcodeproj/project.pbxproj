@@ -14,6 +14,7 @@
 		0B58A14B20163A78005B1F3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B58A14920163A78005B1F3D /* LaunchScreen.storyboard */; };
 		0B58A15620163A78005B1F3D /* TDDForSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B58A15520163A78005B1F3D /* TDDForSwiftTests.swift */; };
 		0B58A16120163AE5005B1F3D /* MoneyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B58A16020163AE5005B1F3D /* MoneyTest.swift */; };
+		0B58A16420163C10005B1F3D /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B58A16320163C10005B1F3D /* Dollar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		0B58A15520163A78005B1F3D /* TDDForSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDForSwiftTests.swift; sourceTree = "<group>"; };
 		0B58A15720163A78005B1F3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B58A16020163AE5005B1F3D /* MoneyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTest.swift; sourceTree = "<group>"; };
+		0B58A16320163C10005B1F3D /* Dollar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dollar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				0B58A14020163A78005B1F3D /* AppDelegate.swift */,
 				0B58A14220163A78005B1F3D /* ViewController.swift */,
 				0B58A14420163A78005B1F3D /* Main.storyboard */,
+				0B58A16220163C00005B1F3D /* Source */,
 				0B58A14720163A78005B1F3D /* Assets.xcassets */,
 				0B58A14920163A78005B1F3D /* LaunchScreen.storyboard */,
 				0B58A14C20163A78005B1F3D /* Info.plist */,
@@ -97,6 +100,14 @@
 				0B58A15720163A78005B1F3D /* Info.plist */,
 			);
 			path = TDDForSwiftTests;
+			sourceTree = "<group>";
+		};
+		0B58A16220163C00005B1F3D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0B58A16320163C10005B1F3D /* Dollar.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B58A14320163A78005B1F3D /* ViewController.swift in Sources */,
+				0B58A16420163C10005B1F3D /* Dollar.swift in Sources */,
 				0B58A14120163A78005B1F3D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
