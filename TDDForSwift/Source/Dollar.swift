@@ -12,4 +12,8 @@ class Dollar {
     init(_ amount: Int) {
         
     }
+    
+    func times(_ multiplier: Int) {
+        
+    }
 }
