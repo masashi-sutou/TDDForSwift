@@ -20,8 +20,8 @@ class Money: Equatable, CustomStringConvertible {
         self.description = String(amount) + " " + currency
     }
     
-    func times(_ multiplier: Int) -> Money? {
-        return nil
+    func times(_ multiplier: Int) -> Money {
+        return Money(amount * multiplier, currency)
     }
     
     func equals<T: Equatable>(_ object: T) -> Bool {
