@@ -20,7 +20,7 @@ class MoneyTest: XCTestCase {
     }
     
     func testMulitiplication() {
-        let five: Dollar = Money.dollar(5)
+        let five: Money = Money.dollar(5)
         XCTAssertEqual(Dollar(10), five.times(2))
         XCTAssertEqual(Dollar(15), five.times(3))
     }

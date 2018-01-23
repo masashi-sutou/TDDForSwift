@@ -11,7 +11,11 @@ import Foundation
 class Money: Equatable {
     var amount: Int = 0
     
-    func equals<T: Equatable>(_ object: T) -> Bool {	
+    func times(_ multiplier: Int) -> Money {
+        fatalError("Abstract")
+    }
+    
+    func equals<T: Equatable>(_ object: T) -> Bool {
         let money: Money = object as! Money
         return amount == money.amount && type(of: self) == type(of: money)
     }
