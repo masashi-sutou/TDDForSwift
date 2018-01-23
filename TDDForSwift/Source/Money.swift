@@ -24,7 +24,7 @@ class Money: Equatable {
         return lhs.amount == rhs.amount && type(of: lhs) == type(of: rhs)
     }
     
-    static func dollar(_ amount: Int) -> Dollar {
+    static func dollar(_ amount: Int) -> Money {
         return Dollar(amount)
     }
 }
