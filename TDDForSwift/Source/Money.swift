@@ -14,6 +14,10 @@ class Money: Equatable {
     func times(_ multiplier: Int) -> Money {
         fatalError("Abstract")
     }
+
+    func currency() -> String {
+        fatalError("Abstract")
+    }
     
     func equals<T: Equatable>(_ object: T) -> Bool {
         let money: Money = object as! Money

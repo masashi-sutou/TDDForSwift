@@ -18,4 +18,8 @@ class Franc: Money {
     override func times(_ multiplier: Int) -> Money {
         return Franc(amount * multiplier)
     }
+    
+    override func currency() -> String {
+        return "CHF"
+    }
 }
