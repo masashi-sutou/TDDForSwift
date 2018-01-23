@@ -9,10 +9,14 @@
 import Foundation
 
 class Money: Equatable {
-    var amount: Int = 0
+    var amount: Int
+    var currency: String
     
-    var currency: String = ""
-
+    init(_ amount: Int, _ currency: String) {
+        self.amount = amount
+        self.currency = currency
+    }
+    
     func times(_ multiplier: Int) -> Money {
         fatalError("Abstract")
     }
