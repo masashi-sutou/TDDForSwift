@@ -21,16 +21,16 @@ class MoneyTest: XCTestCase {
     
     func testMulitiplication() {
         let five: Money = Money.dollar(5)
-        XCTAssertEqual(Dollar(10), five.times(2))
-        XCTAssertEqual(Dollar(15), five.times(3))
+        XCTAssertEqual(Money.dollar(10), five.times(2))
+        XCTAssertEqual(Money.dollar(15), five.times(3))
     }
     
     func testEquality() {
-        XCTAssertTrue(Dollar(5).equals(Dollar(5)))
-        XCTAssertFalse(Dollar(5).equals(Dollar(6)))
+        XCTAssertTrue(Money.dollar(5).equals(Money.dollar(5)))
+        XCTAssertFalse(Money.dollar(5).equals(Money.dollar(6)))
         XCTAssertTrue(Franc(5).equals(Franc(5)))
         XCTAssertFalse(Franc(5).equals(Franc(6)))
-        XCTAssertFalse(Franc(5).equals(Dollar(5)))
+        XCTAssertFalse(Franc(5).equals(Money.dollar(5)))
     }
     
     func testFrancMulitiplication() {
