@@ -13,10 +13,10 @@ class Money: Equatable {
     
     func equals<T: Equatable>(_ object: T) -> Bool {	
         let money: Money = object as! Money
-        return amount == money.amount
+        return amount == money.amount && type(of: self) == type(of: money)
     }
     
     static func ==(lhs: Money, rhs: Money) -> Bool {
-        return lhs.amount == rhs.amount
+        return lhs.amount == rhs.amount && type(of: lhs) == type(of: rhs)
     }
 }
