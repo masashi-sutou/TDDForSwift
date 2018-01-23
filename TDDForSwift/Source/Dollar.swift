@@ -15,7 +15,7 @@ class Dollar: Money {
         super.amount = amount
     }
     
-    func times(_ multiplier: Int) -> Dollar {
+    func times(_ multiplier: Int) -> Money {
         return Dollar(amount * multiplier)
     }
 }
