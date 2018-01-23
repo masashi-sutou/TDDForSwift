@@ -10,10 +10,10 @@ import Foundation
 
 class Franc: Money {
     
-    init(_ amount: Int, _ currency: String?) {
+    init(_ amount: Int, _ currency: String) {
         super.init()
         super.amount = amount
-        super.currency = "CHF"
+        super.currency = currency
     }
     
     override func times(_ multiplier: Int) -> Money {
