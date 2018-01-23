@@ -26,11 +26,11 @@ class Money: Equatable, CustomStringConvertible {
     
     func equals<T: Equatable>(_ object: T) -> Bool {
         let money: Money = object as! Money
-        return amount == money.amount && type(of: self) == type(of: money)
+        return amount == money.amount && currency == money.currency
     }
     
     static func ==(lhs: Money, rhs: Money) -> Bool {
-        return lhs.amount == rhs.amount && type(of: lhs) == type(of: rhs)
+        return lhs.amount == rhs.amount && lhs.currency == rhs.currency
     }
     
     static func dollar(_ amount: Int) -> Money {
