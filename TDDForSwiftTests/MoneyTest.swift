@@ -40,7 +40,7 @@ class MoneyTest: XCTestCase {
     }
     
     func testCurrency() {
-        XCTAssertEqual("USD", Money.dollar(1).currency())
-        XCTAssertEqual("CHF", Money.franc(1).currency())
+        XCTAssertEqual("USD", Money.dollar(1).currency)
+        XCTAssertEqual("CHF", Money.franc(1).currency)
     }
 }

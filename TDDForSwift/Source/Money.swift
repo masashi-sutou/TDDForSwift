@@ -11,11 +11,9 @@ import Foundation
 class Money: Equatable {
     var amount: Int = 0
     
-    func times(_ multiplier: Int) -> Money {
-        fatalError("Abstract")
-    }
+    var currency: String = ""
 
-    func currency() -> String {
+    func times(_ multiplier: Int) -> Money {
         fatalError("Abstract")
     }
     
