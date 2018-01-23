@@ -8,13 +8,16 @@
 
 import Foundation
 
-class Money: Equatable {
+class Money: Equatable, CustomStringConvertible {
+    
     var amount: Int
     var currency: String
-    
+    var description: String
+
     init(_ amount: Int, _ currency: String) {
         self.amount = amount
         self.currency = currency
+        self.description = String(amount) + " " + currency
     }
     
     func times(_ multiplier: Int) -> Money? {
