@@ -10,7 +10,7 @@ import Foundation
 
 class Franc: Money {
     
-    init(_ amount: Int) {
+    init(_ amount: Int, _ currency: String) {
         super.init()
         super.amount = amount
         super.currency = "CHF"
