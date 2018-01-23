@@ -17,8 +17,8 @@ class Money: Equatable {
         self.currency = currency
     }
     
-    func times(_ multiplier: Int) -> Money {
-        fatalError("Abstract")
+    func times(_ multiplier: Int) -> Money? {
+        return nil
     }
     
     func equals<T: Equatable>(_ object: T) -> Bool {
