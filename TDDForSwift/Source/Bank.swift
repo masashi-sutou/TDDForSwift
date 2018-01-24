@@ -11,7 +11,6 @@ import Foundation
 class Bank {
     func reduce(_ source: Expression, _ to: String) -> Money {
         let sum: Sum = source as! Sum
-        let amount: Int = sum.augend.amount + sum.addend.amount
-        return Money(amount, to)
+        return sum.reduce(to)
     }
 }
