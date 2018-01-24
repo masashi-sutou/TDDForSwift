@@ -20,7 +20,7 @@ class Money: Equatable, CustomStringConvertible, Expression {
         self.description = String(amount) + " " + currency
     }
     
-    func times(_ multiplier: Int) -> Money {
+    func times(_ multiplier: Int) -> Expression {
         return Money(amount * multiplier, currency)
     }
     
