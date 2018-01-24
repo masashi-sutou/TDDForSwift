@@ -16,7 +16,7 @@ class Bank {
     }
     
     func addRate(_ from: String, _ to: String, _ rate: Int) {
-        
+        rates[Pair(from, to)] = rate
     }
     
     func rate(_ from: String, _ to: String) -> Int {
