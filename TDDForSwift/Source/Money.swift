@@ -25,7 +25,7 @@ class Money: Equatable, CustomStringConvertible, Expression {
     }
     
     func plus(_ addend: Money) -> Expression {
-        return Money(amount + addend.amount, currency)
+        return Sum(self, addend)
     }
     
     func equals<T: Equatable>(_ object: T) -> Bool {
