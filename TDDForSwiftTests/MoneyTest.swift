@@ -37,7 +37,7 @@ class MoneyTest: XCTestCase {
     }
     
     func testSimpleAddition() {
-        let sum: Money = Money.dollar(5).plus(Money.dollar(5))
+        let five: Money = Money.dollar(5)
         let sum: Expression = five.plus(five)
         let bank: Bank = Bank()
         let reduced: Money = bank.reduce(sum, "USD")
