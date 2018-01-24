@@ -8,12 +8,18 @@
 
 import Foundation
 
-class Pair {
+class Pair: Hashable {
     private let from: String
     private let to: String
     
     init(_ from: String, _ to: String) {
         self.from = from
         self.to = to
+    }
+    
+    var hashValue: Int = 0
+    
+    static func ==(lhs: Pair, rhs: Pair) -> Bool {
+        return lhs.from == rhs.from && lhs.to == rhs.to
     }
 }
