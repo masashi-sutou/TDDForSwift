@@ -21,8 +21,8 @@ class MoneyTest: XCTestCase {
     
     func testMulitiplication() {
         let five: Money = Money.dollar(5)
-        XCTAssertEqual(Money.dollar(10), five.times(2))
-        XCTAssertEqual(Money.dollar(15), five.times(3))
+        XCTAssertEqual(Money.dollar(10), five.times(2) as! Money)
+        XCTAssertEqual(Money.dollar(15), five.times(3) as! Money)
     }
     
     func testEquality() {
@@ -48,8 +48,8 @@ class MoneyTest: XCTestCase {
         let five: Money = Money.dollar(5)
         let result: Expression = five.plus(five)
         let sum: Sum = result as! Sum
-        XCTAssertEqual(five, sum.augend)
-        XCTAssertEqual(five, sum.addend)
+        XCTAssertEqual(five, sum.augend as! Money)
+        XCTAssertEqual(five, sum.addend as! Money)
     }
     
     func testReduceSum() {
