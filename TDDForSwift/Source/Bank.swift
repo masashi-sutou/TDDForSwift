@@ -9,6 +9,8 @@
 import Foundation
 
 class Bank {
+    private var rates: [Pair: Int] = [:]
+    
     func reduce(_ source: Expression, _ to: String) -> Money {
         return source.reduce(self, to)
     }
