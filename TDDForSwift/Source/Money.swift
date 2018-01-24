@@ -28,7 +28,7 @@ class Money: Equatable, CustomStringConvertible, Expression {
         return Sum(self, addend)
     }
     
-    func reduce(_ to: String) -> Money {
+    func reduce(_ bank: Bank, _ to: String) -> Money {
         let rate: Int = currency == "CHF" && to == "USD" ? 2 : 1
         return Money(amount / rate, to)
     }

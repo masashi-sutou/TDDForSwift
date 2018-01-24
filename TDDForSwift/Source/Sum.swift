@@ -17,7 +17,7 @@ class Sum: Expression {
         self.addend = addend
     }
     
-    func reduce(_ to: String) -> Money {
+    func reduce(_ bank: Bank, _ to: String) -> Money {
         let amount: Int = augend.amount + addend.amount
         return Money(amount, to)
     }
