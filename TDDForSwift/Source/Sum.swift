@@ -12,7 +12,7 @@ class Sum: Expression {
     let augend: Expression
     let addend: Expression
     
-    init(_ augend: Money, _ addend: Money) {
+    init(_ augend: Expression, _ addend: Expression) {
         self.augend = augend
         self.addend = addend
     }
