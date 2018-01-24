@@ -24,6 +24,10 @@ class Money: Equatable, CustomStringConvertible {
         return Money(amount * multiplier, currency)
     }
     
+    func plus(_ addend: Money) -> Money {
+        return Money(amount + addend.amount, currency)
+    }
+    
     func equals<T: Equatable>(_ object: T) -> Bool {
         let money: Money = object as! Money
         return amount == money.amount && currency == money.currency
