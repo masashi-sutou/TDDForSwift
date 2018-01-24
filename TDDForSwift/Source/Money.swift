@@ -28,6 +28,10 @@ class Money: Equatable, CustomStringConvertible, Expression {
         return Sum(self, addend)
     }
     
+    func reduce(_ to: String) -> Money {
+        return self
+    }
+    
     func equals<T: Equatable>(_ object: T) -> Bool {
         let money: Money = object as! Money
         return amount == money.amount && currency == money.currency
