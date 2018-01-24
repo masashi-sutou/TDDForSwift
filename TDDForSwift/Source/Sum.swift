@@ -11,4 +11,8 @@ import Foundation
 class Sum {
     let augend: Money? = nil
     let addend: Money? = nil
+    
+    init(_ augend: Money, _ addend: Money) {
+        
+    }
 }
