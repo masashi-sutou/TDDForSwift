@@ -9,10 +9,11 @@
 import Foundation
 
 class Sum: Expression {
-    let augend: Money? = nil
-    let addend: Money? = nil
+    let augend: Money
+    let addend: Money
     
     init(_ augend: Money, _ addend: Money) {
-        
+        self.augend = augend
+        self.addend = addend
     }
 }
