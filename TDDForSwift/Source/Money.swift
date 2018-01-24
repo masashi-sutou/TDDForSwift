@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Money: Equatable, CustomStringConvertible {
+class Money: Equatable, CustomStringConvertible, Expression {
     
     var amount: Int
     var currency: String
