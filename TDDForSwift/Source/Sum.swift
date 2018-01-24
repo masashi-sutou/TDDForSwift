@@ -21,4 +21,8 @@ class Sum: Expression {
         let amount: Int = augend.reduce(bank, to).amount + addend.reduce(bank, to).amount
         return Money(amount, to)
     }
+    
+    func plus(_ addend: Expression) -> Expression {
+        return addend
+    }
 }
