@@ -29,7 +29,8 @@ class Money: Equatable, CustomStringConvertible, Expression {
     }
     
     func reduce(_ to: String) -> Money {
-        return self
+        let rate: Int = currency == "CHF" && to == "USD" ? 2 : 1
+        return Money(amount / rate, to)
     }
     
     func equals<T: Equatable>(_ object: T) -> Bool {
