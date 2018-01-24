@@ -16,4 +16,8 @@ class Bank {
     func addRate(_ from: String, _ to: String, _ rate: Int) {
         
     }
+    
+    func rate(_ from: String, _ to: String) -> Int {
+        return from == "CHF" && to == "USD" ? 2 : 1
+    }
 }
