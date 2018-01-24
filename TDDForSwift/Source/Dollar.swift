@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Dollar {
+class Dollar: Equatable {
 
     private var amount: Int
     
@@ -23,5 +23,9 @@ class Dollar {
     func equals(_ object: AnyObject) -> Bool {
         let dollar: Dollar = object as! Dollar
         return amount == dollar.amount
+    }
+    
+    static func ==(lhs: Dollar, rhs: Dollar) -> Bool {
+        return lhs.amount == rhs.amount
     }
 }
