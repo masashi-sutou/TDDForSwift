@@ -9,8 +9,8 @@
 import Foundation
 
 class Sum: Expression {
-    let augend: Money
-    let addend: Money
+    let augend: Expression
+    let addend: Expression
     
     init(_ augend: Money, _ addend: Money) {
         self.augend = augend
