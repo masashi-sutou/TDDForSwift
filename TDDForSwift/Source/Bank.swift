@@ -12,4 +12,8 @@ class Bank {
     func reduce(_ source: Expression, _ to: String) -> Money {
         return source.reduce(to)
     }
+    
+    func addRate(_ from: String, _ to: String, _ rate: Int) {
+        
+    }
 }
