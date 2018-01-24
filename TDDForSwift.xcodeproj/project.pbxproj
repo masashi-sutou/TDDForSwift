@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0B176CA92016596D00BEDC93 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B176CA82016596D00BEDC93 /* Money.swift */; };
 		0B4D0B9D2018C2770006C345 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4D0B9C2018C2770006C345 /* Expression.swift */; };
+		0B4D0B9F2018C6880006C345 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4D0B9E2018C6880006C345 /* Bank.swift */; };
 		0B58A14120163A78005B1F3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B58A14020163A78005B1F3D /* AppDelegate.swift */; };
 		0B58A14320163A78005B1F3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B58A14220163A78005B1F3D /* ViewController.swift */; };
 		0B58A14620163A78005B1F3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B58A14420163A78005B1F3D /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		0B176CA82016596D00BEDC93 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		0B4D0B9C2018C2770006C345 /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		0B4D0B9E2018C6880006C345 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		0B58A13D20163A78005B1F3D /* TDDForSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDDForSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B58A14020163A78005B1F3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B58A14220163A78005B1F3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			children = (
 				0B176CA82016596D00BEDC93 /* Money.swift */,
 				0B4D0B9C2018C2770006C345 /* Expression.swift */,
+				0B4D0B9E2018C6880006C345 /* Bank.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			files = (
 				0B176CA92016596D00BEDC93 /* Money.swift in Sources */,
 				0B58A14320163A78005B1F3D /* ViewController.swift in Sources */,
+				0B4D0B9F2018C6880006C345 /* Bank.swift in Sources */,
 				0B58A14120163A78005B1F3D /* AppDelegate.swift in Sources */,
 				0B4D0B9D2018C2770006C345 /* Expression.swift in Sources */,
 			);
