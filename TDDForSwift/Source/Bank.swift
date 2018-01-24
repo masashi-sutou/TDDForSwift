@@ -20,6 +20,9 @@ class Bank {
     }
     
     func rate(_ from: String, _ to: String) -> Int {
+        if from == to {
+            return 1
+        }
         return rates[Pair(from, to)]!
     }
 }
