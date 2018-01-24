@@ -17,6 +17,10 @@ class Sum: Expression {
         self.addend = addend
     }
     
+    func times(_ multiplier: Int) -> Expression {
+        return Sum(augend.times(multiplier), addend.times(multiplier))
+    }
+    
     func reduce(_ bank: Bank, _ to: String) -> Money {
         let amount: Int = augend.reduce(bank, to).amount + addend.reduce(bank, to).amount
         return Money(amount, to)
