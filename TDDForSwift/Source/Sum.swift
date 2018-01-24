@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Sum {
+class Sum: Expression {
     let augend: Money? = nil
     let addend: Money? = nil
     
