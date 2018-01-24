@@ -70,9 +70,5 @@ class MoneyTest: XCTestCase {
         bank.addRate("CHF", "USD", 2)
         let result: Money = bank.reduce(Money.franc(2), "USD")
         XCTAssertEqual(Money.dollar(1), result)
-    }
-    
-    func testArrayEquals() {
-        XCTAssertEqual(["abc"], ["abc"])
-    }
+    }    
 }

@@ -17,6 +17,7 @@
 		0B58A14B20163A78005B1F3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B58A14920163A78005B1F3D /* LaunchScreen.storyboard */; };
 		0B58A15620163A78005B1F3D /* TDDForSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B58A15520163A78005B1F3D /* TDDForSwiftTests.swift */; };
 		0B58A16120163AE5005B1F3D /* MoneyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B58A16020163AE5005B1F3D /* MoneyTest.swift */; };
+		0BD64C052018DF9A008735C4 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD64C042018DF9A008735C4 /* Pair.swift */; };
 		0BE28C372018C9AD00AF8139 /* Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE28C362018C9AD00AF8139 /* Sum.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		0B58A15520163A78005B1F3D /* TDDForSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDForSwiftTests.swift; sourceTree = "<group>"; };
 		0B58A15720163A78005B1F3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B58A16020163AE5005B1F3D /* MoneyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTest.swift; sourceTree = "<group>"; };
+		0BD64C042018DF9A008735C4 /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
 		0BE28C362018C9AD00AF8139 /* Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 				0BE28C362018C9AD00AF8139 /* Sum.swift */,
 				0B4D0B9C2018C2770006C345 /* Expression.swift */,
 				0B4D0B9E2018C6880006C345 /* Bank.swift */,
+				0BD64C042018DF9A008735C4 /* Pair.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				0B4D0B9F2018C6880006C345 /* Bank.swift in Sources */,
 				0B58A14120163A78005B1F3D /* AppDelegate.swift in Sources */,
 				0B4D0B9D2018C2770006C345 /* Expression.swift in Sources */,
+				0BD64C052018DF9A008735C4 /* Pair.swift in Sources */,
 				0BE28C372018C9AD00AF8139 /* Sum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
